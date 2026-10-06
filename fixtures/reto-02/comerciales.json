@@ -1,0 +1,17 @@
+[
+  {
+    "email": "lgomez@periferia-ficticia.com",
+    "nombre": "Laura Gómez Restrepo",
+    "region": "Colombia"
+  },
+  {
+    "email": "cruiz@periferia-ficticia.com",
+    "nombre": "Carlos Ruiz Medina",
+    "region": "Andina y Centroamérica"
+  },
+  {
+    "email": "amolina@periferia-ficticia.com",
+    "nombre": "Andrés Molina Pardo",
+    "region": "Sector público Colombia"
+  }
+]

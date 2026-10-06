@@ -1,0 +1,11 @@
+{
+  "id": "msg-005",
+  "de": "amolina@periferia-ficticia.com",
+  "para": "contratos@periferia-ficticia.com",
+  "asunto": "Cotización propuesta Universidad - ampliación fábrica",
+  "fecha": "2026-08-27T14:15:00-05:00",
+  "cuerpo": "Les comparto la cotización que enviamos a la Universidad para la ampliación de la fábrica de software. Aún no hay contrato, es para que la tengan en el radar. Andrés.",
+  "adjuntos": [
+    "cotizacion.txt"
+  ]
+}

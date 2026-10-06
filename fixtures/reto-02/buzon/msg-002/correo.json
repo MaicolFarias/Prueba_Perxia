@@ -1,0 +1,11 @@
+{
+  "id": "msg-002",
+  "de": "cruiz@periferia-ficticia.com",
+  "para": "contratos@periferia-ficticia.com",
+  "asunto": "Contrato Corporación Andina - Fábrica de software 2026-2027",
+  "fecha": "2026-08-18T16:40:00-05:00",
+  "cuerpo": "Equipo, va el contrato firmado con Corporación Andina. Este no pide póliza. Saludos, Carlos.",
+  "adjuntos": [
+    "contrato.txt"
+  ]
+}

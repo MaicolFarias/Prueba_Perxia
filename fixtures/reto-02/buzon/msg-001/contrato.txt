@@ -1,0 +1,23 @@
+CONTRATO DE PRESTACIÓN DE SERVICIOS No. CT-2026-015
+
+Entre los suscritos, INDUSTRIAS DELTA S.A.S., identificada con NIT 890.900.111-4, con domicilio en Bogotá D.C., representada legalmente por Mauricio Salgado Ríos, quien en adelante se denominará EL CONTRATANTE, y PERIFERIA IT GROUP S.A.S., identificada con NIT 900.123.456-7, con domicilio en Medellín, Colombia, representada legalmente por Roberto Andrade Salazar, quien en adelante se denominará EL CONTRATISTA, se ha celebrado el presente contrato que se regirá por las siguientes cláusulas:
+
+PRIMERA. OBJETO. EL CONTRATISTA se obliga a ejecutar la implementación, parametrización y soporte de la plataforma CRM del CONTRATANTE, incluyendo migración de datos y capacitación a usuarios finales.
+
+SEGUNDA. VALOR. El valor total del presente contrato es de DOSCIENTOS SESENTA Y CINCO MILLONES DE PESOS M/CTE (COP $265.000.000), IVA incluido.
+
+TERCERA. PLAZO. El plazo de ejecución será desde el primero (1) de agosto de 2026 hasta el treinta y uno (31) de julio de 2027.
+
+CUARTA. FORMA DE PAGO. El CONTRATANTE pagará al CONTRATISTA mediante facturas mensuales, dentro de los treinta (30) días calendario siguientes a su radicación.
+
+QUINTA. OBLIGACIONES DEL CONTRATISTA. Ejecutar el objeto con personal idóneo, guardar confidencialidad sobre la información del CONTRATANTE y presentar informes mensuales de avance.
+
+SEXTA. GARANTÍAS. EL CONTRATISTA constituirá a favor del CONTRATANTE una póliza de cumplimiento por el veinte por ciento (20%) del valor del contrato, con vigencia igual al plazo y cuatro (4) meses más, expedida por una compañía de seguros legalmente establecida en Colombia.
+
+SÉPTIMA. CONFIDENCIALIDAD. Las partes se obligan a mantener la confidencialidad de la información intercambiada durante la ejecución del contrato y por cinco (5) años después de su terminación.
+
+Para constancia se firma en Bogotá D.C., a los treinta (30) días del mes de julio de 2026.
+
+EL CONTRATANTE                                   EL CONTRATISTA
+Mauricio Salgado Ríos                                    Roberto Andrade Salazar
+Industrias Delta S.A.S.                                     Periferia IT Group S.A.S.

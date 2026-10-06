@@ -1,0 +1,16 @@
+CONTRATO MARCO DE PRESTACIÓN DE SERVICIOS No. CM-2026-03
+
+Entre DISTRIBUIDORA CARIBE S.A.S., NIT 800.222.333-9, con domicilio en Barranquilla, representada legalmente por Ernesto Villalba Cano (EL CONTRATANTE), y PERIFERIA IT GROUP S.A.S., NIT 900.123.456-7, representada legalmente por Roberto Andrade Salazar (EL CONTRATISTA), se celebra el presente contrato marco:
+
+PRIMERA. OBJETO. Establecer las condiciones generales bajo las cuales EL CONTRATISTA prestará servicios de desarrollo de software, soporte y consultoría tecnológica, que se concretarán mediante órdenes de servicio suscritas por las partes.
+
+SEGUNDA. VALOR. El presente contrato marco no tiene un valor determinado. El valor de cada servicio será el que se establezca en la respectiva orden de servicio, según las tarifas del Anexo 1.
+
+TERCERA. PLAZO. El presente contrato tendrá una duración de doce (12) meses contados a partir de la fecha de su firma, prorrogables automáticamente por periodos iguales salvo aviso en contrario con treinta (30) días de antelación.
+
+CUARTA. GARANTÍAS. Para cada orden de servicio cuyo valor supere los cien millones de pesos (COP $100.000.000), EL CONTRATISTA constituirá póliza de cumplimiento por el diez por ciento (10%) de su valor.
+
+Se firma en Barranquilla, en el mes de agosto de 2026.
+
+Ernesto Villalba Cano                  Roberto Andrade Salazar
+Distribuidora Caribe S.A.S.            Periferia IT Group S.A.S.

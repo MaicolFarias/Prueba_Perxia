@@ -1,0 +1,19 @@
+{
+  "name": "reto-02-registro-contratos",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm build && node dist/src/server.js",
+    "build": "tsc",
+    "start": "node dist/src/server.js",
+    "demo": "pnpm build && node dist/demo.js"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
+}

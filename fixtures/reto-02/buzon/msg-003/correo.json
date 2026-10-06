@@ -1,0 +1,11 @@
+{
+  "id": "msg-003",
+  "de": "cruiz@periferia-ficticia.com",
+  "para": "contratos@periferia-ficticia.com",
+  "asunto": "Otrosí No. 1 contrato CT-2026-011 Minera Los Andes",
+  "fecha": "2026-08-22T11:05:00-05:00",
+  "cuerpo": "Adjunto el otrosí firmado que amplía plazo y valor del contrato con Minera Los Andes. Favor actualizar el registro. Carlos.",
+  "adjuntos": [
+    "otrosi.txt"
+  ]
+}

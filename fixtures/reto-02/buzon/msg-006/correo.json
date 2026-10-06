@@ -1,0 +1,11 @@
+{
+  "id": "msg-006",
+  "de": "jperez@periferia-ficticia.com",
+  "para": "contratos@periferia-ficticia.com",
+  "asunto": "Contrato marco Distribuidora Caribe",
+  "fecha": "2026-08-31T17:50:00-05:00",
+  "cuerpo": "Buenas tardes, me pidieron enviarles este contrato marco que se firmó con Distribuidora Caribe. Quedo atento. Julián Pérez, practicante comercial.",
+  "adjuntos": [
+    "contrato.txt"
+  ]
+}

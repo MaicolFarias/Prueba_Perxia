@@ -1,0 +1,21 @@
+CONTRATO DE PRESTACIÓN DE SERVICIOS No. CT-2026-016
+
+Entre los suscritos, CORPORACIÓN ANDINA DE SERVICIOS S.A., identificada con RUC 1790012345001, con domicilio en Quito, Ecuador, representada legalmente por Verónica Paredes Loor, quien en adelante se denominará EL CONTRATANTE, y PERIFERIA IT GROUP S.A.S., identificada con NIT 900.123.456-7, con domicilio en Medellín, Colombia, representada legalmente por Roberto Andrade Salazar, quien en adelante se denominará EL CONTRATISTA, se ha celebrado el presente contrato que se regirá por las siguientes cláusulas:
+
+PRIMERA. OBJETO. EL CONTRATISTA prestará servicios de fábrica de software bajo modalidad de célula dedicada, con un equipo de seis (6) profesionales, para la evolución de las aplicaciones corporativas del CONTRATANTE.
+
+SEGUNDA. VALOR. El valor total del presente contrato es de CIENTO VEINTE MIL DÓLARES DE LOS ESTADOS UNIDOS DE AMÉRICA (USD 120,000.00), más los impuestos de ley.
+
+TERCERA. PLAZO. El plazo de ejecución será de doce (12) meses, desde el quince (15) de agosto de 2026 hasta el catorce (14) de agosto de 2027.
+
+CUARTA. FORMA DE PAGO. El CONTRATANTE pagará al CONTRATISTA mediante facturas mensuales, dentro de los treinta (30) días calendario siguientes a su radicación.
+
+QUINTA. OBLIGACIONES DEL CONTRATISTA. Ejecutar el objeto con personal idóneo, guardar confidencialidad sobre la información del CONTRATANTE y presentar informes mensuales de avance.
+
+SEXTA. CONFIDENCIALIDAD. Las partes se obligan a mantener la confidencialidad de la información intercambiada durante la ejecución del contrato y por cinco (5) años después de su terminación.
+
+Para constancia se firma en Quito, Ecuador, a los doce (12) días del mes de agosto de 2026.
+
+EL CONTRATANTE                                   EL CONTRATISTA
+Verónica Paredes Loor                                    Roberto Andrade Salazar
+Corporación Andina de Servicios S.A.                                     Periferia IT Group S.A.S.

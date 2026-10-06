@@ -1,0 +1,11 @@
+{
+  "id": "msg-004",
+  "de": "lgomez@periferia-ficticia.com",
+  "para": "contratos@periferia-ficticia.com",
+  "asunto": "RV: Contrato Clínica San Rafael - Mesa de servicio",
+  "fecha": "2026-08-26T08:30:00-05:00",
+  "cuerpo": "Reenvío por si no lo tienen, es el contrato de la mesa de servicio de la Clínica que firmamos en mayo. Laura.",
+  "adjuntos": [
+    "contrato.txt"
+  ]
+}

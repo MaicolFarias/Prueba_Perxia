@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f5f7fa" />
+  <title>Registro de contratos</title>
+  <style>
+    :root { color-scheme: light; --ink:#172238; --muted:#5e6b80; --blue:#175cd3; --line:#dce3ec; --surface:#fff; --bg:#f5f7fa; --amber:#fff5d8; --amberline:#e6b949; }
+    * { box-sizing:border-box } body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif }
+    .layout { max-width:1000px; margin:auto; min-height:100vh; display:flex; flex-direction:column; padding:24px 20px }
+    header { display:flex; justify-content:space-between; align-items:center; padding:4px 0 20px; border-bottom:1px solid var(--line) }
+    h1 { font-size:20px; margin:0; letter-spacing:-.02em } .status { color:var(--muted); font-size:13px } .status i { width:8px;height:8px;border-radius:50%;background:#12a66a;display:inline-block;margin-right:7px }
+    #conversation { flex:1; padding:24px 0 18px; overflow:auto } .welcome { background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;max-width:690px;color:var(--muted) }
+    .welcome strong { color:var(--ink);display:block;font-size:17px;margin-bottom:7px } .message { max-width:780px; margin:15px 0; white-space:pre-wrap; overflow-wrap:anywhere }
+    .message.user { margin-left:auto; background:#e8f0ff; border:1px solid #cfddf8; border-radius:15px 15px 3px 15px; padding:11px 15px; width:fit-content; max-width:78% }
+    .message.assistant { background:var(--surface);border:1px solid var(--line);border-radius:3px 15px 15px 15px;padding:14px 17px }
+    .tools { max-width:780px;margin:10px 0 15px 10px;display:grid;gap:8px } details { background:#f0f3f7;border:1px solid var(--line);border-radius:10px;padding:8px 12px;color:#304057;font-size:13px }
+    summary { cursor:pointer;font-weight:650 } pre { white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.45 ui-monospace,Consolas,monospace;margin:9px 0;color:#38465c }
+    .confirm { display:none; background:var(--amber);border:1px solid var(--amberline);border-radius:12px;padding:13px 15px;margin:0 auto 12px;max-width:780px;color:#573d00 }
+    .confirm.show { display:block } .confirm strong { display:block } .composer { border:1px solid #cdd6e2;background:var(--surface);border-radius:14px;padding:10px;display:flex;gap:10px;box-shadow:0 3px 14px #1e293b0b }
+    textarea { resize:vertical;min-height:44px;max-height:160px;flex:1;border:0;outline:0;padding:10px 8px;font:inherit;color:var(--ink) } button { border:0;border-radius:10px;background:var(--blue);color:white;font-weight:650;padding:0 20px;cursor:pointer } button:disabled { opacity:.55;cursor:wait }
+    .hint { font-size:12px;color:var(--muted);text-align:center;margin:8px 0 0 } .thinking { color:var(--muted);font-size:13px;padding:0 0 10px;display:none } .thinking.show { display:block }
+    @media(max-width:600px){.layout{padding:15px 12px}.message.user{max-width:90%}button{padding:0 14px}}
+  </style>
+</head>
+<body>
+  <main class="layout">
+    <header><h1>Registro de contratos vigentes</h1><span class="status"><i></i>Agente listo</span></header>
+    <section id="conversation" aria-live="polite"><div class="welcome"><strong>Hola, soy el asistente de contratos.</strong>Puedo revisar el buzón, extraer y validar contratos, registrar los casos limpios y preparar alertas. Escribe, por ejemplo: <b>Procesa el buzón con fecha de hoy 2026-09-03. Registra lo que esté limpio y muéstrame lo que requiera revisión.</b></div></section>
+    <div id="confirm" class="confirm" role="status"><strong>Se requiere tu confirmación</strong>Hay campos de confianza baja. Revisa el detalle de la conversación y confirma los valores antes de autorizar el registro.</div>
+    <div id="thinking" class="thinking">El agente está revisando…</div>
+    <form id="form"><div class="composer"><textarea id="input" placeholder="Escribe tu mensaje…" required></textarea><button id="send" type="submit">Enviar</button></div><p class="hint">Las herramientas ejecutadas y sus resultados se muestran en la conversación.</p></form>
+  </main>
+  <script>
+    const conversation=document.querySelector('#conversation'),form=document.querySelector('#form'),input=document.querySelector('#input'),send=document.querySelector('#send'),thinking=document.querySelector('#thinking'),confirmBox=document.querySelector('#confirm');
+    let sessionId=sessionStorage.getItem('contract-session')||'';
+    function addMessage(role,text){conversation.querySelector('.welcome')?.remove();const node=document.createElement('div');node.className='message '+role;node.textContent=text;conversation.append(node);conversation.scrollTop=conversation.scrollHeight;}
+    function addTools(items){if(!items?.length)return;const group=document.createElement('div');group.className='tools';for(const item of items){const d=document.createElement('details');const s=document.createElement('summary');s.textContent='Herramienta: '+item.name;const a=document.createElement('pre');a.textContent='Argumentos\n'+JSON.stringify(item.arguments,null,2);const r=document.createElement('pre');r.textContent='Resultado\n'+JSON.stringify(item.result,null,2);d.append(s,a,r);group.append(d);}conversation.append(group);conversation.scrollTop=conversation.scrollHeight;}
+    async function restoreSession(){if(!sessionId)return;try{const response=await fetch('/api/sessions/'+encodeURIComponent(sessionId));if(!response.ok)return;const data=await response.json();for(const message of data.messages||[])if(message.content)addMessage(message.role,message.content);addTools(data.toolCalls);confirmBox.classList.toggle('show',Boolean(data.needsConfirmation));}catch{}}
+    restoreSession();
+    form.addEventListener('submit',async e=>{e.preventDefault();const message=input.value.trim();if(!message)return;addMessage('user',message);input.value='';send.disabled=true;thinking.classList.add('show');try{const response=await fetch('/api/chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({sessionId,message})});const data=await response.json();sessionId=data.sessionId||sessionId;sessionStorage.setItem('contract-session',sessionId);addTools(data.toolCalls);if(data.reply)addMessage('assistant',data.reply);confirmBox.classList.toggle('show',Boolean(data.needsConfirmation));}catch(err){addMessage('assistant','No fue posible conectar con el agente. Verifica que el servidor esté activo.');}finally{thinking.classList.remove('show');send.disabled=false;input.focus();}});
+  </script>
+</body>
+</html>

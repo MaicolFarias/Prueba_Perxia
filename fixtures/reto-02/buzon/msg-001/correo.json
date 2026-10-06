@@ -1,0 +1,11 @@
+{
+  "id": "msg-001",
+  "de": "lgomez@periferia-ficticia.com",
+  "para": "contratos@periferia-ficticia.com",
+  "asunto": "Contrato firmado - Industrias Delta - Implementación CRM",
+  "fecha": "2026-08-04T09:12:00-05:00",
+  "cuerpo": "Hola, adjunto el contrato firmado con Industrias Delta para la implementación del CRM. Requiere póliza de cumplimiento, favor gestionar con el corredor. Gracias, Laura.",
+  "adjuntos": [
+    "contrato.txt"
+  ]
+}
